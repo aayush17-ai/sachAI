@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { Logo } from "./logo";
+import { ThemeToggle } from "./theme-toggle";
 
 const NAV_LINKS = [
   { href: "/#how-it-works", label: "How it works" },
@@ -37,9 +38,10 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <Link
             href="/investigate"
-            className="hidden items-center gap-2 rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-white sm:inline-flex"
+            className="hidden items-center gap-2 rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/85 sm:inline-flex"
           >
             Try SachAI
             <ArrowRight className="size-4" aria-hidden="true" />

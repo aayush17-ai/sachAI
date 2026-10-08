@@ -78,7 +78,7 @@ export function ClaimInput({ defaultValue = "", onSubmit, autoFocus }: ClaimInpu
           <button
             type="submit"
             disabled={!trimmed}
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-accent-ink transition-colors hover:bg-[#7cb0ff] disabled:cursor-not-allowed disabled:bg-line-strong disabled:text-subtle"
+            className="inline-flex items-center justify-center gap-2 rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-accent-ink transition-colors hover:bg-accent/85 disabled:cursor-not-allowed disabled:bg-line-strong disabled:text-subtle"
           >
             Investigate Claim
             <ArrowRight className="size-4" aria-hidden="true" />
